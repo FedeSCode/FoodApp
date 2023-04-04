@@ -1,0 +1,5 @@
+/******login_Welcome******/
+
+app.get('/welcome', isAuthenticated ,(req,res) =>{
+  res.render('welcome',{user_name:req.session.name})
+});

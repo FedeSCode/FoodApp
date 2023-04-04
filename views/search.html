@@ -1,0 +1,89 @@
+{{> header}}
+  
+  <div id="searchDiv">
+    
+
+    <div class="container" >
+      <div id="Menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/search">Toutes les recettes</a></li>
+                {{#authenticated}}
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/create">Créer une recette</a></li>
+                {{/authenticated}}
+              </ul>  
+              <a class="navbar-brand" href="#"></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div>
+        <h1>{{num_found}} recettes trouvées {{#page}} (page {{page}}/{{num_pages}}) {{/page}}</h1>
+      </div>
+    </div>  
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+          {{#results}}
+          <div class="col-md-4" >
+            <a href="/read/{{entry}}">
+              <div class="card text-white bg-dark border-dark mb-3">
+                <img src="{{img}}" class="card-img-top">
+                <div class="card-body ">
+                    <h5 class="card-title">{{title}}</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          {{/results}}
+      </div>
+    </div>
+
+    {{#next_page}}
+    <nav aria-label="Page navigation example">
+      <div class="container">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="/search?query={{query}}&page={{next_page}}">Next</a></li>
+      </ul>
+      </div>
+    </nav>
+    {{/next_page}}
+    <!--
+    <div class="container">
+      <div>
+        <a href="/search?query={{query}}&page={{next_page}}">Page suivante</a>
+      </div>
+    </div>
+  </div>-->
+  
+
+{{> footer}}
+
+
+<!--
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+      {{#results}}
+      <div class="col" >
+        <a href="/read/{{entry}}">
+          <div class="card">
+            <img src="{{img}}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+                <a href="/read/{{entry}}" class="btn btn-primary"> read</a>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{/results}}
+  </div>
+</div>-->
+
+

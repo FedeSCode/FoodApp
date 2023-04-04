@@ -1,0 +1,58 @@
+{{> header}}
+  <div id="readDiv">
+    <div class="container">
+      <div id="Menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/search">Toutes les recettes</a></li>
+                
+                {{#authenticated}}
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/create">Créer une recette</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/update/{{id}}">Modifier</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/delete/{{id}}">Supprimer</a></li>
+                {{/authenticated}}
+
+                
+              </ul>  
+              <a class="navbar-brand" href="#"></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    
+      <div>
+      <h1>{{title}}</h1>   
+      <p>{{description}}</p>
+      <p>Durée : {{duration}}</p>
+      </div>
+      <div>
+      <img src="{{img}}">
+      </div>
+    </div>
+    <div class="container">
+      <div>
+      Ingrédients :
+      <ul>
+        {{#ingredients}}
+          <li>{{name}}</li>
+        {{/ingredients}}
+      </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div>
+      Étapes :
+      <ol>
+        {{#stages}}
+          <li>{{description}}</li>
+        {{/stages}}
+      </ol>
+      </div>
+    </div>
+  </div>
+{{> footer}}

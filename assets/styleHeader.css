@@ -1,0 +1,79 @@
+body {
+    padding-top: 120px;
+    /*background: linear-gradient(to right, rgb(166, 163, 182), rgb(125, 104, 208));*/
+   background: linear-gradient(to right, rgb(209, 202, 204), rgb(62, 121, 121));
+   /* background: linear-gradient(to right, rgb(101, 92, 105), rgb(35, 107, 107));*/
+
+}
+
+
+.starter-template {
+    padding: 50px 15px;
+    text-align: center;
+}
+/*******************Header**************************/
+#SearchBar{
+    text-align: left;
+    height: 30px;
+    width: 600px;
+}
+/*******************Footer**************************/
+
+#footerDiv{
+    padding-bottom: 0%;
+    padding-top: 2%;
+    text-align: center;
+    text-align: center;
+
+}
+
+#footer #bar {
+    padding-bottom: 0;
+}
+
+#footerDiv h4{
+
+    color: white;
+
+}
+/*******************Create**************************/
+#createDiv{
+    text-align: center;
+}
+/*******************Index***************************/
+#indexDiv{
+    text-align: center;
+}
+/*******************Login***************************/
+#loginDiv{
+    text-align: center;
+    
+}
+/*******************register************************/
+#registerDiv{
+    text-align: center;
+}
+#registerDiv .card-body h5{
+    text-decoration: none;
+}
+/********************Read***************************/
+#readDiv{
+    text-align: left;
+
+
+}
+#readDiv a{
+    text-decoration: none;
+}
+/********************Search*************************/
+#searchDiv{
+    text-align: center;
+    text-decoration: none
+
+}
+/*******************Update**************************/
+#updateDiv{
+    text-align: center;
+}
+/*******************Welcome*************************/
+
