@@ -43,7 +43,7 @@ What things you need to install the software and how to install them.
 Node js
 sqlite
 json
-
+bootstrap
 ```
 
 
@@ -52,6 +52,7 @@ json
 - [Express](https://expressjs.com/) - Server Framework
 - [VueJs](https://vuejs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Bootstrap](https://getbootstrap.com/) - Style
 
 ## ✍️ Authors <a name = "authors"></a>
 

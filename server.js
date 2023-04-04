@@ -79,7 +79,6 @@ app.get('/delete/:id',isAuthenticated, (req, res) => {
 });
 
 /**** Routes pour modifier les données ****/
-
 // Fonction qui facilite la création d'une recette
 function post_data_to_recipe(req) {
   return {
