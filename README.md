@@ -27,7 +27,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-FoodTime cest une aplicatin de cuisine devellope dans un projet de Web pour ma licence informatique
+FoodTime c'est une application de cuisine développe dans un projet de Web pour ma licence informatique
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
