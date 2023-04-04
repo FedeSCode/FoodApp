@@ -56,4 +56,4 @@ bootstrap
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@FedeSCode](https://github.com/fedescode) - Idea & Initial work
+- [@FedeSCode](https://github.com/fedescode) 
