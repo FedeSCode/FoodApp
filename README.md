@@ -27,7 +27,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-FoodTime cest une aplicatin de cuisine devellope dans un projet de Web pour ma licence informatique
+FoodTime c'est une application de cuisine développe dans un projet de Web pour ma licence informatique
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -56,4 +56,4 @@ bootstrap
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@FedeSCode](https://github.com/fedescode) - Idea & Initial work
+- [@FedeSCode](https://github.com/fedescode) 
